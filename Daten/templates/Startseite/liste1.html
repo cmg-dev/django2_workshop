@@ -1,0 +1,21 @@
+<!DOCTYP html>
+<html>
+
+
+
+{% block content %}
+    {% for geb in geb %}
+    {% if geb.geburtstag == "05.02.2018" %}
+    <h2>{{ geb.name }}</h2>
+    {% endif %}
+    {% endfor %}
+{% endblock content %}
+</html>
+
+
+
+
+
+    {% for geb in geb %}
+    <h2>{{ geb.name }}</h2>
+    {% endfor %}
