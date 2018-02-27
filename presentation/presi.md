@@ -40,7 +40,24 @@ background-image: url(img/motivation.jpg)
 nothing
 
 ---
+name: motivation
+class: middle
+background-image: url(nop)
 
+.regular[
+# Why Django?
+]
+
+1. <i class="fa fa-bolt fa-1x"></i> [It's Fast](https://www.djangoproject.com/start/)
+
+1. <i class="fa fa-lock fa-1x"></i> [It's Secure](https://docs.djangoproject.com/en/2.0/topics/security/)
+
+1. <i class="fa fa-expand fa-1x"></i> [It's Scalable](https://docs.djangoproject.com/en/2.0/faq/general/#does-django-scale)
+
+???
+nop
+
+---
 name: inverse
 class: left, middle
 background-image: url(img/extinct.jpg)
