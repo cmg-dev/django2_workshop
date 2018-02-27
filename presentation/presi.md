@@ -48,11 +48,11 @@ background-image: url(nop)
 # Why Django?
 ]
 
-1. <i class="fa fa-bolt fa-1x"></i> [It's Fast](https://www.djangoproject.com/start/)
+<i class="fa fa-bolt fa-1x"></i> [It's Fast](https://www.djangoproject.com/start/)
 
-1. <i class="fa fa-lock fa-1x"></i> [It's Secure](https://docs.djangoproject.com/en/2.0/topics/security/)
+<i class="fa fa-lock fa-1x"></i> [It's Secure](https://docs.djangoproject.com/en/2.0/topics/security/)
 
-1. <i class="fa fa-expand fa-1x"></i> [It's Scalable](https://docs.djangoproject.com/en/2.0/faq/general/#does-django-scale)
+<i class="fa fa-expand fa-1x"></i> [It's Scalable](https://docs.djangoproject.com/en/2.0/faq/general/#does-django-scale)
 
 ???
 nop
