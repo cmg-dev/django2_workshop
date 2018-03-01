@@ -89,6 +89,24 @@ background-image: url(img/extinct.jpg)
 
 ---
 name: inverse
+class: left, middle
+background-image: url(img/extinct.jpg)
+
+.example_page_left[
+# Django is Used by...
+
+1. [Instagram](https://www.instagram.com)
+1. [Pinterest](https://www.pinterest.de/)
+1. [Disqus](https://disqus.com/)
+1. more [1]
+]
+
+.footnote[
+[[1]: 25 Most Popular Python+Django Sites](https://www.shuup.com/blog/25-of-the-most-popular-python-and-django-websites/)
+]
+
+---
+name: inverse
 class: left
 background-image: url(img/math.jpg)
 
