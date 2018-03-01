@@ -106,10 +106,11 @@ background-image: url(img/extinct.jpg)
 .example_page_left[
 # Django is Used by...
 
-1. [Instagram](https://www.instagram.com)
-1. [Pinterest](https://www.pinterest.de/)
-1. [Disqus](https://disqus.com/)
-1. more [1]
+<i class="fa fa-instagram fa-1x"></i> [Instagram](https://www.instagram.com)
+
+<i class="fa fa-pinterest fa-1x"></i> [Pinterest](https://www.pinterest.de/)
+
+... more [1]
 ]
 
 .footnote[
