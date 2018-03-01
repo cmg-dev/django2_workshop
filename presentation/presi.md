@@ -168,9 +168,9 @@ background-image: url(img/math.jpg)
 
 Laziness > 9000 :
 
-```plain
-0 = Ax - b
-```
+**0** = **A** **x** - **b**
+
+All we need.
 ]
 
 ---
