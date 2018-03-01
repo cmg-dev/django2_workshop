@@ -118,49 +118,60 @@ background-image: url(img/extinct.jpg)
 ]
 
 ---
-name: inverse
+name:
+class: center, middle
+background-image: url(img/math.jpg)
+
+# Solving Linear Equations 🙈
+
+---
+name:
 class: left
 background-image: url(img/math.jpg)
 
+## Solving Linear Equations 🙈
+
 .example_page[
-# Using mix
 
-**Start a project**
-
-```elixir
-$ mix nerves.new my_project --target rpi3
+```plain
+z = a x + b y
 ```
 
-**Does the boilerplate**
+Not too hard, right?
+]
 
-```elixir
-creating my_project/config/config.exs
-creating my_project/lib/my_app.ex
-creating my_project/test/test_helper.exs
-creating my_project/test/my_app_test.exs
-creating my_project/rel/vm.args
-creating my_project/rel/.gitignore
-creating my_project/.gitignore
-creating my_project/mix.exs
-creating my_project/README.md
+---
+name:
+class: left, top
+background-image: url(img/math.jpg)
+
+## Solving Linear Equations 🙈
+.example_page[
+
+We need this:
+
+```plain
+z_0 = a_0 x + b_0 y
+z_1 = a_1 x + b_1 y
+z_2 = a_2 x + b_2 y
 ```
 ]
 
 ---
-name: demo
-class: left
-background-image: url(img/solo_0.jpg)
+name:
+class: left, top
+background-image: url(img/math.jpg)
 
-.left-column[
-# Livecoding Fun
+## Solving Linear Equations 🙈
 
-**Let's code Together...**
+.example_page[
+
+Laziness > 9000 :
+
+```plain
+0 = Ax - b
+```
 ]
-
-???
-
-* More Doing less talking
-* Lots of demos on the internet
 
 ---
 name: video
