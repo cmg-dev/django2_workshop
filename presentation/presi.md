@@ -155,7 +155,7 @@ database-schema problems.
 Start a site with:
 
 ```bash
-django-admin startproject mysite
+django-admin startproject newspaper
 ```
 
 [1]: https://en.wikipedia.org/wiki/Object-relational_mapping
@@ -166,6 +166,27 @@ django-admin startproject mysite
 
 On the foundations of a solid database, we can easily construct a Web
 Application for our purposes.
+
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+.example_page_left[
+```bash
+django2_workshop 𝚿 django-admin startproject newspaper
+django2_workshop 𝚿 tree newspaper
+newspaper
+├── manage.py
+└── newspaper
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+1 directory, 5 files
+```
+]
 
 ---
 name: motivation
