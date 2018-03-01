@@ -74,7 +74,7 @@ background-image: url(img/extinct.jpg)
 ---
 name: inverse
 class: left
-background-image: url(img/extinct.jpg)
+background-image: url(img/math.jpg)
 
 .example_page[
 # Using mix
