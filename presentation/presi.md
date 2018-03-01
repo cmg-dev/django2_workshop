@@ -333,9 +333,11 @@ name: motivation
 class: center
 background-image: url(img/math.jpg)
 
-## Solving Linear Equations 🙈
+## Solving Linear Equations 🙉
 
-.example_page[
+.example_page_left[
+
+You have been taught 👩‍🏫
 
 ```plain
 z = a x + b y
@@ -349,8 +351,10 @@ name: motivation
 class: center, top
 background-image: url(img/math.jpg)
 
-## Solving Linear Equations 🙈
-.example_page[
+## Solving Linear Equations 🙊
+.example_page_left[
+
+Nearly there:
 
 We need this:
 
