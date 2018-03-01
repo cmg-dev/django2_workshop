@@ -79,14 +79,17 @@ name: motivation
 class: left, middle
 background-image: url(img/extinct.jpg)
 
+.example_page_left[
 # Django is Old
 
-.example_page_left[
 **Started in 2005**
 
 **Very mature, very robust.**
-
 ]
+
+???
+
+BSD License
 
 ---
 name: motivation
