@@ -24,9 +24,9 @@ Open Minded
 Coder in natural Environment
 
 ---
-name: motivation
+name: light
 class: left
-background-image: url(img/roadmap.jpg)
+background-image: url(img/light.jpg)
 
 .regular[
 # Motivation
@@ -394,6 +394,39 @@ All we need and solve for:
 
 __x__ = __A__^-1 * __b__
 
+---
+name: motivation
+class: left, top
+background-image: url(img/math.jpg)
+
+## Solving Linear Equations 🐵
+
+.example_page_left[
+
+```python
+def solve(A, b):
+    """This solves a given linear equation system.
+    Ax - b = 0
+    We solve for x = A^-1 * b
+    :A: The coefficient matrix for A.
+    :B: The result vector b.
+    :returns: The solution to this equation system x as np.vector().
+    """
+    import numpy as np
+    import numpy.linalg as mat
+
+    A = np.matrix(A)
+    b = np.matrix(b)
+
+    A_inv = mat.inv(A)
+
+    x = A_inv * b
+
+    return x
+```
+]
+
+
 ]
 
 ---
@@ -413,6 +446,25 @@ background-image: url(img/roadmap.jpg)
 ???
 nop
 
+---
+name: explore
+class: left, middle
+background-image: url(img/explore.jpg)
+
+.example_page_left[
+# Ride the Snake
+
+Python ❤️ :
+
+* Machine Learning
+* Computer Vision
+* Every Other Programming Language
+* Math/ Science/ Cool Stuff
+* Excel 😍
+]
+
+???
+nop
 
 ---
 name: video
