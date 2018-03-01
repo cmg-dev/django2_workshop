@@ -109,7 +109,7 @@ background-image: url(img/extinct.jpg)
 ]
 
 .footnote[
-[[1]: 25 Most Popular Python+Django Sites](https://www.shuup.com/blog/25-of-the-most-popular-python-and-django-websites/)
+[See: 25 Most Popular Python+Django Sites](https://www.shuup.com/blog/25-of-the-most-popular-python-and-django-websites/)
 ]
 
 ---
