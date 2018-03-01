@@ -7,7 +7,6 @@ class: left
 background-image: url(img/about.jpg)
 
 .right-column[
-
 Open Minded
 
 |> Science
@@ -40,32 +39,43 @@ background-image: url(img/roadmap.jpg)
 nothing
 
 ---
-name: motivation
-class: middle
-background-image: url(nop)
+name: light
+class: left, middle
+background-image: url(img/light.jpg)
 
 .regular[
 # Why Django?
 ]
 
+---
+name: light
+class: top, center
+background-image: url(img/light.jpg)
+
+# Why Django?
+
+.left-column[
 <i class="fa fa-bolt fa-1x"></i> [It's Fast](https://www.djangoproject.com/start/)
 
 <i class="fa fa-lock fa-1x"></i> [It's Secure](https://docs.djangoproject.com/en/2.0/topics/security/)
 
 <i class="fa fa-expand fa-1x"></i> [It's Scalable](https://docs.djangoproject.com/en/2.0/faq/general/#does-django-scale)
-
+]
 ???
 nop
 
 ---
-name: motivation
+name: light
 class: middle
-background-image: url(nop)
+background-image: url(img/light.jpg)
 
 .regular[
 # Why Django?
 ]
+.left-column[
 > "Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough requirements of experienced Web developers." [1]
+]
+
 
 .footnote[
 [[1]](https://www.djangoproject.com/start/overview/)
@@ -155,7 +165,7 @@ database-schema problems.
 Start a site with:
 
 ```bash
-django-admin startproject newspaper
+$ django-admin startproject newspaper
 ```
 
 [1]: https://en.wikipedia.org/wiki/Object-relational_mapping
@@ -322,11 +332,13 @@ background-image: url(img/solo_0.jpg)
 ]
 
 ---
-name:
+name: motivation
 class: center, middle
 background-image: url(img/math.jpg)
 
+.example_page_left[
 # Solving Linear Equations 🙈
+]
 
 ---
 name: motivation
