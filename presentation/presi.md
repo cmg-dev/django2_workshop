@@ -113,6 +113,164 @@ background-image: url(img/extinct.jpg)
 ]
 
 ---
+name: motivation
+class: left, middle
+background-image: url(img/extinct.jpg)
+
+# ⚠️
+
+.example_page_left[
+1. Beware of your habits!
+
+   You do not want your code in `/var/www`.
+
+1. Conflicts may occur.
+
+   Avoid modules names like `django` or `test` or `math`.
+
+1. Put your code in a safe place.
+
+   Like `/home/djangos_palace`.
+]
+
+???
+
+Habits: Don't put your code in www/root
+
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+# Building a Site 👷
+
+.example_page_left[
+**Foundation**
+
+Django comes with a powerful object-relational mapper [[1]].
+
+The data-model syntax [[2]] - it’s been solving many years’ worth of
+database-schema problems.
+
+Start a site with:
+
+```bash
+django-admin startproject mysite
+```
+
+[1]: https://en.wikipedia.org/wiki/Object-relational_mapping
+[2]: https://docs.djangoproject.com/en/2.0/topics/db/models/
+]
+
+???
+
+On the foundations of a solid database, we can easily construct a Web
+Application for our purposes.
+
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+# 1. Reporter Model 🕵️
+
+.example_page_left[
+
+We use `demo/news/models.py` and add this:
+
+```python
+from django.db import models
+
+class Reporter(models.Model):
+    full_name = models.CharField(max_length=70)
+
+    def __str__(self):
+        return self.full_name
+```
+
+This creates our first model 🎉.
+]
+
+???
+Explain inheritance in Python
+
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+# 1. Article Model 📰
+
+.example_page_left[
+No Reporter without Article:
+
+```python
+(...)
+
+class Article(models.Model):
+    pub_date = models.DateField()
+    headline = models.CharField(max_length=200)
+    content = models.TextField()
+    reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.headline
+```
+
+So we have two models in code.
+]
+
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+# 2. Migrate 🐘
+
+.example_page_left[
+Too insert the models into a database, we simply type:
+
+```bash
+python manage.py migrate
+```
+]
+???
+
+explain manage.py
+
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+# 🍱 There is no free lunch! 🍱
+
+.example_page_left[
+
+## Or is it?
+
+```python
+# Import the models
+>>> from models import Reporter, Article
+
+# No reporters are in the system, yet.
+>>> Reporter.objects.all()
+<QuerySet []>
+
+# Create a new Reporter.
+>>> r = Reporter(full_name='Deep Thought')
+
+# Save the Reporter.
+>>> r.save()
+```
+
+This is basically why I love Python ❤️
+
+]
+
+???
+
+---
 name: demo
 class: left
 background-image: url(img/solo_0.jpg)
