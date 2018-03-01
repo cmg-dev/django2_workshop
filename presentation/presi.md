@@ -287,11 +287,11 @@ background-image: url(img/extinct.jpg)
 
 .example_page_left[
 
-## Or is it?
+**Or is it?**
 
 ```python
 # Import the models
->>> from models import Reporter, Article
+>>> from demo.models import Reporter, Article
 
 # No reporters are in the system, yet.
 >>> Reporter.objects.all()
