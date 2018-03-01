@@ -180,6 +180,22 @@ All we need.
 ]
 
 ---
+name: motivation
+class: left
+background-image: url(img/roadmap.jpg)
+
+# Facts to Know
+
+| Release Series   | Latest Release   | End of mainstream support   | End of extended support    |
+| ---------------- | ---------------- | --------------------------- | -------------------------- |
+| 2.0              | 2.0.2            | August 2018                 | April 2019                 |
+| 1.11 LTS         | 1.11.10          | December 2, 2017            | Until at least April 2020  |
+
+???
+nop
+
+
+---
 name: video
 class: left
 background-image: url(img/tv1.jpg)
