@@ -416,6 +416,7 @@ __0__ = __A__ __x__ - __b__
 All we need and solve for:
 
 __x__ = __A__^-1 * __b__
+]
 
 ---
 name: motivation
@@ -454,16 +455,18 @@ def solve(A, b):
 
 ---
 name: motivation
-class: center
+class: left, middle
 background-image: url(img/roadmap.jpg)
 
+.example_page_left[
 # Facts to Know
 
-.example_page_left[
 | Release Series   | Latest Release   | End of mainstream support   | End of extended support    |
 | ---------------- | ---------------- | --------------------------- | -------------------------- |
+| (...)            | (...)            | (...)                       | (...)                      |
 | 2.0              | 2.0.2            | August 2018                 | April 2019                 |
 | 1.11 LTS         | 1.11.10          | December 2, 2017            | Until at least April 2020  |
+| (...)            | (...)            | (...)                       | (...)                      |
 ]
 
 ???
