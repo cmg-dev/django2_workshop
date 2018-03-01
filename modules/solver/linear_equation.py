@@ -27,11 +27,12 @@ def solve(A, b):
             [ 12.]])
     """
     import numpy as np
+    import numpy.linalg as mat
 
     A = np.matrix(A)
     b = np.matrix(b)
 
-    A_inv = np.linalg.inv(A)
+    A_inv = mat.inv(A)
 
     x = A_inv * b
 
