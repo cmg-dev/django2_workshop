@@ -103,7 +103,9 @@ background-image: url(img/extinct.jpg)
 
 <i class="fab fa-pinterest fa-1x"></i> [Pinterest](https://www.pinterest.de/)
 
-... more [1]
+<i class="fab fa-firefox fa-1x"></i> [Mozilla](https://www.mozilla.org/de/)
+
+... more
 ]
 
 .footnote[
