@@ -14,7 +14,7 @@ def solve(A, b):
 
     :A: The coefficient matrix for A.
     :B: The result vector b.
-    :returns: The solution to this equation system as x np.vector(X).
+    :returns: The solution to this equation system x as np.vector().
 
     EXAMPLES:
     ---------
