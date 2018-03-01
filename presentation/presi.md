@@ -62,8 +62,9 @@ name: motivation
 class: middle
 background-image: url(nop)
 
+.regular[
 # Why Django?
-
+]
 > "Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough requirements of experienced Web developers." [1]
 
 .footnote[
@@ -74,12 +75,13 @@ background-image: url(nop)
 nop
 
 ---
-name: inverse
+name: motivation
 class: left, middle
 background-image: url(img/extinct.jpg)
 
-.example_page_left[
 # Django is Old
+
+.example_page_left[
 
 **Started in 2005**
 
