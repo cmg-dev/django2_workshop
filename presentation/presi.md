@@ -15,9 +15,9 @@ Open Minded
 |> Craftsman
 
 .footnote[
-<i class="fa fa-github-square fa-2x"></i> [cmg-dev](https://github.com/cmg-dev)
+<i class="fab fa-github-square fa-2x"></i> [cmg-dev](https://github.com/cmg-dev)
 
-<i class="fa fa-twitter-square fa-2x"></i> [@codethonian](https://twitter.com/codethonian)
+<i class="fab fa-twitter-square fa-2x"></i> [@codethonian](https://twitter.com/codethonian)
 ]
 ]
 
@@ -106,9 +106,9 @@ background-image: url(img/extinct.jpg)
 .example_page_left[
 # Django is Used by...
 
-<i class="fa fa-instagram fa-1x"></i> [Instagram](https://www.instagram.com)
+<i class="fab fa-instagram fa-1x"></i> [Instagram](https://www.instagram.com)
 
-<i class="fa fa-pinterest fa-1x"></i> [Pinterest](https://www.pinterest.de/)
+<i class="fab fa-pinterest fa-1x"></i> [Pinterest](https://www.pinterest.de/)
 
 ... more [1]
 ]
@@ -179,5 +179,5 @@ class: left
 background-image: url(img/tv1.jpg)
 
 .regular[
-<i class="fa fa-youtube-play fa-2x"></i> []()
+<i class="fa fa-play fa-2x"></i> []()
 ]
