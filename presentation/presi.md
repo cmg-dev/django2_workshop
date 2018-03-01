@@ -82,7 +82,6 @@ background-image: url(img/extinct.jpg)
 # Django is Old
 
 .example_page_left[
-
 **Started in 2005**
 
 **Very mature, very robust.**
@@ -90,7 +89,7 @@ background-image: url(img/extinct.jpg)
 ]
 
 ---
-name: inverse
+name: motivation
 class: left, middle
 background-image: url(img/extinct.jpg)
 
