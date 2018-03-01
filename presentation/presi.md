@@ -1,5 +1,5 @@
 ﻿class:
-background-image: url(img/s0.jpg)
+background-image: url(img/explore.jpg)
 
 ---
 name: about
@@ -27,7 +27,7 @@ Coder in natural Environment
 ---
 name: motivation
 class: left
-background-image: url(img/motivation.jpg)
+background-image: url(img/roadmap.jpg)
 
 .regular[
 # Motivation
