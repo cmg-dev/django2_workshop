@@ -450,7 +450,15 @@ def solve(A, b):
 ```
 ]
 
+---
+name: demo
+class: left
+background-image: url(img/solo_0.jpg)
 
+.left-column[
+# Livecoding Fun II
+
+**Let's code Together, again...**
 ]
 
 ---
