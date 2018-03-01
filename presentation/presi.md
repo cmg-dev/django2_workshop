@@ -88,6 +88,17 @@ background-image: url(img/extinct.jpg)
 ]
 
 ---
+name: demo
+class: left
+background-image: url(img/solo_0.jpg)
+
+.left-column[
+# Livecoding Fun
+
+**Let's code Together...**
+]
+
+---
 name: inverse
 class: left, middle
 background-image: url(img/extinct.jpg)
