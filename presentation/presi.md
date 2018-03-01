@@ -329,8 +329,8 @@ background-image: url(img/math.jpg)
 # Solving Linear Equations 🙈
 
 ---
-name:
-class: left
+name: motivation
+class: center
 background-image: url(img/math.jpg)
 
 ## Solving Linear Equations 🙈
@@ -345,8 +345,8 @@ Not too hard, right?
 ]
 
 ---
-name:
-class: left, top
+name: motivation
+class: center, top
 background-image: url(img/math.jpg)
 
 ## Solving Linear Equations 🙈
@@ -362,32 +362,37 @@ z_2 = a_2 x + b_2 y
 ]
 
 ---
-name:
-class: left, top
+name: motivation
+class: center, top
 background-image: url(img/math.jpg)
 
-## Solving Linear Equations 🙈
+## Solving Linear Equations 🐵
 
-.example_page[
+.example_page_left[
 
-Laziness > 9000 :
+Laziness > 9000:
 
-**0** = **A** **x** - **b**
+__0__ = __A__ __x__ - __b__
 
-All we need.
+All we need and solve for:
+
+__x__ = __A__^-1 * __b__
+
 ]
 
 ---
 name: motivation
-class: left
+class: center
 background-image: url(img/roadmap.jpg)
 
 # Facts to Know
 
+.example_page_left[
 | Release Series   | Latest Release   | End of mainstream support   | End of extended support    |
 | ---------------- | ---------------- | --------------------------- | -------------------------- |
 | 2.0              | 2.0.2            | August 2018                 | April 2019                 |
 | 1.11 LTS         | 1.11.10          | December 2, 2017            | Until at least April 2020  |
+]
 
 ???
 nop
