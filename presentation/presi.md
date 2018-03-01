@@ -58,6 +58,22 @@ background-image: url(nop)
 nop
 
 ---
+name: motivation
+class: middle
+background-image: url(nop)
+
+# Why Django?
+
+> "Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough requirements of experienced Web developers." [1]
+
+.footnote[
+[[1]](https://www.djangoproject.com/start/overview/)
+]
+
+???
+nop
+
+---
 name: inverse
 class: left, middle
 background-image: url(img/extinct.jpg)
