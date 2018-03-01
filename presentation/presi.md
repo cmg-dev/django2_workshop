@@ -88,17 +88,6 @@ background-image: url(img/extinct.jpg)
 ]
 
 ---
-name: demo
-class: left
-background-image: url(img/solo_0.jpg)
-
-.left-column[
-# Livecoding Fun
-
-**Let's code Together...**
-]
-
----
 name: inverse
 class: left, middle
 background-image: url(img/extinct.jpg)
@@ -115,6 +104,17 @@ background-image: url(img/extinct.jpg)
 
 .footnote[
 [[1]: 25 Most Popular Python+Django Sites](https://www.shuup.com/blog/25-of-the-most-popular-python-and-django-websites/)
+]
+
+---
+name: demo
+class: left
+background-image: url(img/solo_0.jpg)
+
+.left-column[
+# Livecoding Fun
+
+**Let's code Together...**
 ]
 
 ---
