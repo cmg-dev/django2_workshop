@@ -386,17 +386,16 @@ background-image: url(img/math.jpg)
 
 ---
 name: motivation
-class: center
+class: center, middle
 background-image: url(img/math.jpg)
 
-## Solving Linear Equations 🙉
-
 .example_page_left[
+## Solving Linear Equations 🙉
 
 You have been taught 👩‍🏫
 
 ```plain
-z = a x + b y
+z = a x + b y + c
 ```
 
 Not too hard, right?
@@ -404,11 +403,11 @@ Not too hard, right?
 
 ---
 name: motivation
-class: center, top
+class: center, middle
 background-image: url(img/math.jpg)
 
-## Solving Linear Equations 🙊
 .example_page_left[
+## Solving Linear Equations 🙊
 
 Nearly there:
 
@@ -423,12 +422,11 @@ z_2 = a_2 x + b_2 y
 
 ---
 name: motivation
-class: center, top
+class: center, middle
 background-image: url(img/math.jpg)
 
-## Solving Linear Equations 🐵
-
 .example_page_left[
+## Solving Linear Equations 🐵
 
 Laziness > 9000:
 
@@ -444,9 +442,8 @@ name: motivation
 class: left, top
 background-image: url(img/math.jpg)
 
-## Solving Linear Equations 🐵
-
 .example_page_left[
+## Solving Linear Equations 🐵
 
 ```python
 def solve(A, b):
