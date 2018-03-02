@@ -1,0 +1,11 @@
+.
+├── manage.py
+├── news
+│   └── models.py
+└── newspaper
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+2 directories, 6 files
