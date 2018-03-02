@@ -151,7 +151,7 @@ background-image: url(img/light.jpg)
 # Why Django?
 
 .left-column[
-> "Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough requirements of experienced Web developers." [1]
+> "Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough requirements of experienced Web developers." [[1]]
 ]
 
 
@@ -164,7 +164,7 @@ nop
 
 ---
 name: light
-class: top, left
+class: middle, left
 background-image: url(img/light.jpg)
 
 # Why Django?
@@ -202,7 +202,7 @@ class: left, middle
 background-image: url(img/extinct.jpg)
 
 .example_page_left[
-# Django is Used by...
+# Django is used by...
 
 <i class="fab fa-instagram fa-1x"></i> [Instagram](https://www.instagram.com)
 
@@ -244,7 +244,7 @@ Habits: Don't put your code in www/root
 
 ---
 name: motivation
-class: left, top
+class: left, middle
 background-image: url(img/extinct.jpg)
 
 # Building a Site 👷
@@ -274,8 +274,10 @@ Application for our purposes.
 
 ---
 name: motivation
-class: left, top
+class: left, middle
 background-image: url(img/extinct.jpg)
+
+# Inspect the Site 🔍
 
 .example_page_left[
 ```bash
@@ -290,27 +292,6 @@ newspaper
     └── wsgi.py
 
 1 directory, 5 files
-```
-]
-
----
-name: motivation
-class: left, top
-background-image: url(img/extinct.jpg)
-
-.example_page_left[
-```diff
-1a2
-> ├── db.sqlite3
-6a8,11
->     ├── __pycache__
->     │   ├── __init__.cpython-36.pyc
->     │   ├── settings.cpython-36.pyc
->     │   └── urls.cpython-36.pyc
-11c16
-< 2 directories, 6 files
----
-> 3 directories, 10 files
 ```
 ]
 
@@ -333,16 +314,179 @@ background-image: url(img/extinct.jpg)
 
 1. mysite/wsgi.py: An entry-point for WSGI-compatible web servers
 
+Web Server Gateway Interface
+
 ---
 name: motivation
 class: left, top
 background-image: url(img/extinct.jpg)
 
-# 1. Reporter Model 🕵️
+# Migrate 🐘
+
+.example_page_left[
+Too insert the models into a database, we simply type:
+
+```bash
+$ python manage.py migrate
+
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+(...)
+```
+]
+???
+
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+# Migrate 🐘
+
+.example_page_left[
+```bash
+$ python manage.py migrate
+
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... OK
+```
+]
+
+---
+name: motivation
+class: left, middle
+background-image: url(img/extinct.jpg)
+
+# Inspect again 🔍
+
+.example_page_left[
+```diff
+$ tree .
+.
+├── db.sqlite3
+├── manage.py
+├── news
+│   └── models.py
+└── newspaper
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-36.pyc
+    │   ├── settings.cpython-36.pyc
+    │   └── urls.cpython-36.pyc
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+3 directories, 10 files
+```
+]
+
+---
+name: motivation
+class: left, middle
+background-image: url(img/extinct.jpg)
+
+# Difference?
+
+.example_page_left[
+```diff
+$ diff before_migrate.txt after_migrate.txt
+1a2
+> ├── db.sqlite3
+6a8,11
+>     ├── __pycache__
+>     │   ├── __init__.cpython-36.pyc
+>     │   ├── settings.cpython-36.pyc
+>     │   └── urls.cpython-36.pyc
+```
+]
+
+---
+name: motivation
+class: left, middle
+background-image: url(img/extinct.jpg)
+
+# Milestone
+
+.example_page_left[
+1. There is a site.
+1. We have a database
+1. We understand the files
+
+Let's build something:
+
+**A Reporter that creates News.**
+]
+
+---
+name: motivation
+class: left, middle
+background-image: url(img/extinct.jpg)
+
+# Projects vs. Apps
+
+.example_page_left[
+Let's start an App
+
+```bash
+python manage.py startapp solve
+```
+]
+
+---
+name: motivation
+class: left, middle
+background-image: url(img/extinct.jpg)
+
+# Milestone
+
+
+.example_page_left[
+```bash
+$ tree solve
+solve
+├── __init__.py
+├── admin.py
+├── apps.py
+├── migrations
+│   └── __init__.py
+├── models.py
+├── tests.py
+└── views.py
+
+1 directory, 7 files
+```
+]
+
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+# Reporter Model 🕵️
 
 .example_page_left[
 
-We use `demo/news/models.py` and add this:
+We use `solve/models.py` and add this:
 
 ```python
 from django.db import models
@@ -365,7 +509,7 @@ name: motivation
 class: left, top
 background-image: url(img/extinct.jpg)
 
-# 1. Article Model 📰
+# Article Model 📰
 
 .example_page_left[
 No Reporter without Article:
@@ -383,26 +527,18 @@ class Article(models.Model):
         return self.headline
 ```
 
-So we have two models in code.
+So we have two models in code. Migrate again.
 ]
 
----
-name: motivation
-class: left, top
-background-image: url(img/extinct.jpg)
-
-# 2. Migrate 🐘
-
-.example_page_left[
-Too insert the models into a database, we simply type:
-
-```bash
-python manage.py migrate
-```
-]
 ???
 
-explain manage.py
+```bash
+$ python manage.py makemigrations
+Migrations for 'solve':
+  solve/migrations/0001_initial.py
+    - Create model Reporter
+```
+
 
 ---
 name: motivation
