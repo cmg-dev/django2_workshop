@@ -1,0 +1,9 @@
+{% if has_reporters %}
+    <ul>
+    {% for reporter in reporters %}
+        <li>{{ reporter.full_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Reporters are available.</p>
+{% endif %}
