@@ -40,6 +40,16 @@ nothing
 
 ---
 name: light
+class: center, middle
+background-image: url(img/light.jpg)
+
+![](img/python.png)
+
+.footnote[
+<i class="fa fa-link fa-1x"></i> [XKCD](https://xkcd.com/353)
+]
+---
+name: light
 class: left, middle
 background-image: url(img/light.jpg)
 
