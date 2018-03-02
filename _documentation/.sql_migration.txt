@@ -1,0 +1,20 @@
+newspaper 𝚿 python manage.py sqlmigrate demo 0001
+BEGIN;
+--
+-- Create model Article
+--
+CREATE TABLE "demo_article" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "pub_date" date NOT NULL, "headline" varchar(200) NOT NULL, "content" text NOT NULL);
+--
+-- Create model Reporter
+--
+CREATE TABLE "demo_reporter" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "full_name" varchar(70) NOT NULL);
+--
+-- Add field reporter to article
+--
+ALTER TABLE "demo_article" RENAME TO "demo_article__old";
+CREATE TABLE "demo_article" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "pub_date" date NOT NULL, "headline" varchar(200) NOT NULL, "content" text NOT NULL, "reporter_id" integer NOT NULL REFERENCES "demo_reporter" ("id") DEFERRABLE INITIALLY DEFERRED);
+INSERT INTO "demo_article" ("id", "pub_date", "headline", "content", "reporter_id") SELECT "id", "pub_date", "headline", "content", NULL FROM "demo_article__old";
+DROP TABLE "demo_article__old";
+CREATE INDEX "demo_article_reporter_id_df0b20f6" ON "demo_article" ("reporter_id");
+COMMIT;
+

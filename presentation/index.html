@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Django 2.0 Workshop</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+        body {
+          font-family: 'Ubuntu';
+        color: #ccc;
+        }
+        h1, h2, h3 {
+          font-family: 'Ubuntu';
+          font-weight: normal;
+        }
+      .remark-slide-content h1 { font-size: 2.5em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .remark-slide-content { background-color: #222; }
+
+      #slide-django .regular {
+        color: #555;
+        width: 50%;
+        float: right;
+        padding-top: 4em;
+        text-shadow: .5px .5px #222;
+        font-size: 1em;
+      }
+      #slide-light .regular {
+        width: 30%;
+        float: right;
+        padding-top: 2em;
+        text-shadow: 1px 1px #555;
+        font-size: 1em;
+      }
+      #slide-motivation .footnote {
+        color: #ccc;
+        position: absolute;
+        bottom: 3em;
+        font-size: .8em;
+        float: left;
+        font-size: 1em;
+        text-shadow: 2px 2px #222;
+      }
+      #slide-light {
+        color: #ddd;
+        text-shadow: 2px 2px #222;
+        font-size: 1.5em;
+        background-color: #444;
+      }
+      #slide-light .footnote {
+        color: #ccc;
+        position: absolute;
+        bottom: 3em;
+        font-size: .8em;
+        float: left;
+        font-size: 1em;
+        text-shadow: 2px 2px #222;
+      }
+      #slide-light .left-column{
+        background-color: rgba(25, 25, 25, .4);
+      }
+      #slide-light a {
+        color: #ccc;
+      }
+      #slide-light .example_page_left{
+        color: #ddd;
+        width: 95%;
+        float: left;
+        background-color: rgba(25, 25, 25, .4);
+      }
+      #slide-motivation {
+        color: #ddd;
+        text-shadow: 2px 2px #222;
+        font-size: 1.5em;
+        background-color: #444;
+      }
+      #slide-motivation .remark-code {
+        font-size: .9em;
+        text-shadow: 2px 2px #222;
+      }
+      #slide-motivation a {
+        color: #ccc;
+      }
+      #slide-motivation .example_page_left{
+        color: #ddd;
+        width: 95%;
+        float: left;
+        background-color: rgba(25, 25, 25, .4);
+      }
+      #slide-explore .example_page_left{
+        color: #ddd;
+        width: 95%;
+        float: left;
+        background-color: rgba(25, 25, 25, .6);
+      }
+      #slide-about .footnote {
+        position: absolute;
+        bottom: 3em;
+        font-size: .8em;
+      }
+      #slide-about .right-column {
+        color: #ccc;
+        width: 30%;
+        float: right;
+        padding-top: 2em;
+        line-height: .5em;
+        font-size: 1.5em;
+      }
+      #slide-regular .right-column {
+        color: #ccc;
+        width: 85%;
+        float: right;
+        padding-top: 4em;
+        font-size: 1.5em;
+      }
+      #slide-iot a {
+        color: #ccc;
+        text-shadow: 1px 1px #555;
+      }
+      #slide-iot .heading {
+        color: #ccc;
+        text-shadow: 1px 1px #555;
+      }
+      #slide-iot .regular {
+        color: #555;
+        width: 85%;
+        float: right;
+        padding-top: 0em;
+        font-size: 1.5em;
+        text-shadow: 1px 1px #555;
+      }
+      #slide-iot .right-column {
+        color: #ddd;
+        width: 50%;
+        float: right;
+        padding-top: 4em;
+        font-size: 1.5em;
+        text-shadow: 1px 1px #555;
+      }
+      #slide-iot .footnote {
+        color: #ddd;
+        position: absolute;
+        bottom: 3em;
+        font-size: .8em;
+        text-shadow: 1px 1px #555;
+      }
+      #slide-django .footnote {
+        color: #ddd;
+        position: absolute;
+        bottom: 3em;
+        font-size: .8em;
+      }
+      #slide-django a {
+        color: #ddd;
+      }
+      #slide-noimage .right-column {
+        color: #000;
+        width: 45%;
+        float: right;
+        padding-top: 6em;
+      }
+      #slide-withimage .right-column {
+        color: #770;
+        width: 45%;
+        float: right;
+        padding-top: 6em;
+      }
+      #slide-inverse .example_page{
+        color: #ddd;
+        width: 75%;
+        float: right;
+        padding-top: 6em;
+        text-shadow: 2px 2px #555;
+      }
+      #slide-inverse .example_page_left{
+        color: #ddd;
+        width: 95%;
+        float: right;
+        text-shadow: 1px 1px #555;
+      }
+      #slide-inverse .footnote {
+        color: #ddd;
+        position: absolute;
+        bottom: 3em;
+        font-size: .8em;
+      }
+      #slide-video a {
+        color: #eee;
+      }
+      #slide-video .regular{
+        color: #eee;
+        width: 75%;
+        float: right;
+        padding-top: 6em;
+        font-size: 1.5em;
+        text-shadow: 1px 1px #555;
+      }
+      #slide-demo .left-column{
+        color: #ddd;
+        width: 75%;
+        float: left;
+        padding-top: 6em;
+      }
+      .left-column h2:last-of-type,
+      .left-column h3:last-child {
+        color: #000;
+      }
+      .right-column {
+        color: #ddd;
+        width: 45%;
+        float: right;
+        padding-top: 6em;
+      }
+      .example_page{
+        width: 85%;
+        float: right;
+        padding-top: 6em;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source" style="display: none;"></textarea>
+    <script src="out/remark.js"></script>
+    <script defer src="out/fontawesome-all.min.js"></script>
+    <script type="text/javascript">
+            var slideshow = remark.create({
+                    sourceUrl: 'presi.md',
+                    ratio: '16:9',
+                    navigation: {
+                            click: true
+                    },
+                    highlightStyle: 'solarized-dark',
+                    highlightLines: true,
+                    slideNumberFormat: '%current%',
+                    countIncrementalSlides: true
+            });
+    </script>
+  </body>
+</html>

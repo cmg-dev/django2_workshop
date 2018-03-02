@@ -1,0 +1,6 @@
+newspaper 𝚿 python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, demo, sessions
+Running migrations:
+  Applying demo.0001_initial... OK
+
