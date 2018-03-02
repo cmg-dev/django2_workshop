@@ -221,6 +221,27 @@ newspaper
 ```
 ]
 
+---
+name: motivation
+class: left, top
+background-image: url(img/extinct.jpg)
+
+.example_page_left[
+```diff
+1a2
+> ├── db.sqlite3
+6a8,11
+>     ├── __pycache__
+>     │   ├── __init__.cpython-36.pyc
+>     │   ├── settings.cpython-36.pyc
+>     │   └── urls.cpython-36.pyc
+11c16
+< 2 directories, 6 files
+---
+> 3 directories, 10 files
+```
+]
+
 ???
 
 1. The outer mysite/ root directory is just a container for your project. Its
