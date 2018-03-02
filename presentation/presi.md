@@ -101,7 +101,7 @@ background-image: url(img/light.jpg)
 
 
 .footnote[
-[[1]](https://www.djangoproject.com/start/overview/)
+<i class="fa fa-link fa-1x"></i> [[1]](https://www.djangoproject.com/start/overview/)
 ]
 
 ???
@@ -142,7 +142,7 @@ background-image: url(img/extinct.jpg)
 ]
 
 .footnote[
-[See: 25 Most Popular Python+Django Sites](https://www.shuup.com/blog/25-of-the-most-popular-python-and-django-websites/)
+<i class="fa fa-link fa-1x"></i> [See: 25 Most Popular Python+Django Sites](https://www.shuup.com/blog/25-of-the-most-popular-python-and-django-websites/)
 ]
 
 ---
@@ -504,9 +504,7 @@ class: left, middle
 background-image: url(img/explore.jpg)
 
 .example_page_left[
-# Ride the Snake
-
-Python ❤️ :
+# Python ❤️
 
 * Machine Learning
 * Computer Vision
@@ -519,10 +517,10 @@ Python ❤️ :
 nop
 
 ---
-name: video
-class: left
-background-image: url(img/tv1.jpg)
+name: explore
+class: left, middle
+background-image: url(img/explore.jpg)
 
-.regular[
-<i class="fa fa-play fa-2x"></i> []()
+.example_page_left[
+# Thanks... and stay Curious!
 ]
