@@ -104,7 +104,26 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ---
 name: light
-class: top, center
+class: top, middle
+background-image: url(img/light.jpg)
+
+# Why Django?
+
+.left-column[
+> "Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough requirements of experienced Web developers." [1]
+]
+
+
+.footnote[
+<i class="fa fa-link fa-1x"></i> [[1]](https://www.djangoproject.com/start/overview/)
+]
+
+???
+nop
+
+---
+name: light
+class: top, left
 background-image: url(img/light.jpg)
 
 # Why Django?
@@ -116,26 +135,6 @@ background-image: url(img/light.jpg)
 
 <i class="fa fa-expand fa-1x"></i> [It's Scalable](https://docs.djangoproject.com/en/2.0/faq/general/#does-django-scale)
 ]
-???
-nop
-
----
-name: light
-class: middle
-background-image: url(img/light.jpg)
-
-.regular[
-# Why Django?
-]
-.left-column[
-> "Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough requirements of experienced Web developers." [1]
-]
-
-
-.footnote[
-<i class="fa fa-link fa-1x"></i> [[1]](https://www.djangoproject.com/start/overview/)
-]
-
 ???
 nop
 
