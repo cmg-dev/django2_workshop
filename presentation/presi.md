@@ -510,7 +510,7 @@ background-image: url(img/explore.jpg)
 * Computer Vision
 * Every Other Programming Language
 * Math/ Science/ Cool Stuff
-* Excel 😍
+* IPython, Jupyter, Excel 😍
 ]
 
 ???
