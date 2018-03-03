@@ -1,0 +1,16 @@
+.
+├── db.sqlite3
+├── manage.py
+├── news
+│   └── models.py
+└── newspaper
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-36.pyc
+    │   ├── settings.cpython-36.pyc
+    │   └── urls.cpython-36.pyc
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+3 directories, 10 files

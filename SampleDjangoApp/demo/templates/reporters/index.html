@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'demo/style.css' %}" />
+
+{% if has_reporters %}
+    <ul>
+    {% for reporter in reporters %}
+        <li> <a>{{ reporter.full_name }} </a> </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Reporters are available.</p>
+{% endif %}

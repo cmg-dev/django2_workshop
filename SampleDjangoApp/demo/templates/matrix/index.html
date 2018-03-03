@@ -1,0 +1,21 @@
+<h1>Matrix Solve</h1>
+
+<form action="{% url 'solution' %}" method="post">
+
+{% csrf_token %}
+
+{% for row_index in matrix_rows %}
+	{% for col_index in matrix_cols %}
+		<input type="text" name="a_{{ row_index }}_{{ forloop.counter }}" id="a_{{ row_index }}_{{ forloop.counter }}" value="0.0" />
+		<label>x_{{ forloop.counter }}</label>
+	{% endfor %}
+	<br />
+{% endfor %}
+<br />
+{% for row_index in matrix_rows %}
+	<input type="text" name="b_{{ row_index }}" id="a_{{ row_index }}" value="0.0" />
+	<br />
+{% endfor %}
+<br />
+<input type="submit" value="Solver" />
+</form>
